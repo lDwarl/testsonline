@@ -1,0 +1,41 @@
+@import "src/colors";
+
+.ui.container.AdminTestingDetails {
+  .head {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+
+    div {
+      margin-bottom: 10px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .answers {
+    margin-bottom: 15px;
+    border-bottom: 1px solid $color_grey;
+
+    .question {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom:5px;
+    }
+
+    .answer {
+      padding: 15px 0;
+
+      span {
+        padding: 10px;
+        color: #fff;
+        background: #b71c1c;
+
+        &.correct {
+          background: #009688;
+        }
+      }
+    }
+  }
+}

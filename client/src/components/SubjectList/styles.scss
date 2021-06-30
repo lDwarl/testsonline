@@ -1,0 +1,56 @@
+@import 'src/colors';
+
+.SubjectList {
+  .empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SubjectListItem {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 3px 3px #eee;
+
+    .name {
+      flex: 1 1 auto;
+      padding-left: 10px;
+    }
+
+    .edit, .remove {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: inherit;
+      font-size: 16px;
+      cursor: pointer;
+
+      i {
+        margin-right: 0;
+      }
+    }
+
+    .edit {
+      color: $edit_color;
+      margin-right: 10px;
+
+      &:hover {
+        background: #eef;
+        border-radius: 100%;
+      }
+    }
+
+    .remove {
+      color: $remove_color;
+
+      &:hover {
+        background: #fee;
+        border-radius: 100%;
+      }
+    }
+  }
+}

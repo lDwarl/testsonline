@@ -1,0 +1,22 @@
+@import "src/colors";
+
+.ui.container.AdminSubject {
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .ui.button {
+      margin-right: 0;
+      background: $color_green;
+      color: #fff;
+      border: 1px solid;
+
+      &:hover {
+        color: $color_green;
+        background: #fff;
+      }
+    }
+  }
+}

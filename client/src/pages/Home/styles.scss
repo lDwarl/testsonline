@@ -1,0 +1,48 @@
+@import "src/colors";
+
+.ui.container.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 10px;
+
+    .ui.input {
+      width: 100%;
+      margin-bottom: 25px;
+
+      input {
+        color: $color_grey;
+
+        &:focus {
+          color: $color_green;
+          border-color: $color_green;
+        }
+      }
+    }
+
+    .CustomSelect {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    .ui.button {
+      width: 150px;
+      background: $color_green;
+      border: 1px solid $color_green;
+      color: #fff;
+      margin-top: 10px;
+
+      &:hover {
+        color: $color_green;
+        background: #fff;
+        border-radius: 10px;
+      }
+    }
+  }
+}

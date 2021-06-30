@@ -1,0 +1,81 @@
+@import "src/colors";
+
+.StudentTesting {
+  margin: 15px 0;
+  padding: 0 10px;
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    span:first-child {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .answers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .StudentAnswer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 49%;
+      min-height: 40px;
+      padding: 5px;
+      margin-bottom: 15px;
+      border: 1px solid $color_grey;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        background: $color_green;
+        border: 1px solid $color_green;
+        color: #fff;
+      }
+    }
+  }
+
+  .TestingResult {
+    .head {
+      margin-bottom: 25px;
+    }
+
+    .results {
+      div {
+        font-size: 18px;
+        margin-bottom: 10px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 125px;
+
+      .ui.button {
+        width: 150px;
+        background: $color_green;
+        border: 1px solid $color_green;
+        color: #fff;
+        margin-top: 10px;
+
+        &:hover {
+          color: $color_green;
+          background: #fff;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
